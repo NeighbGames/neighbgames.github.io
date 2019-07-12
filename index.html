@@ -14,10 +14,26 @@ a:link {
 color:lightblue;
 }
 
+a:visited {
+color:gray;
+}
+
 h1 {
   text-align: center;
   font-family:"Bahianita";
   letter-spacing:1.5px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @media (min-width:750px) {
@@ -34,9 +50,10 @@ font-size:3.5rem;
 <p>These are games created by youth and staff at Neighborhood House. Enjoy!</p>
 <div class="row">
 <div class="column">
-<ul>
-<li><a href="https://neighbgames.github.io/eileenBubbles/">Bubble Popper</a></li>
-</ul>
+<a href="https://neighbgames.github.io/eileenBubbles/"><img src="cookieCatch.png" alt="screencap of Bubble Popper"></a><a href="https://neighbgames.github.io/eileenBubbles/">Bubble Popper</a>
+</div>
+<div class="column">
+<a href="https://neighbgames.github.io/eileenCookieCatch/"><img src="cookieCatch.png" alt="screencap of Cookie Catch"></a><a href="https://neighbgames.github.io/eileenCookieCatch/">Cookie Catch</a>
 </div>
 </div>
 
