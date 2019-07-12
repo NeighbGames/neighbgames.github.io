@@ -30,8 +30,8 @@ h1 {
 
 .column {
   float: left;
-  width: 33.33%;
-  padding:20px;
+  width: 20%;
+  margin:20px;
   text-align:center;
 }
 
@@ -43,8 +43,25 @@ h1 {
 }
 
 @media (max-width:750px) {
+* {
+box-sizing:border-box;
+}
 body {
+margin:20px;
 font-size:3.5rem;
+}
+
+.column {
+  float:left;
+  width:80%;
+  margin:10px;
+  text-align:center;
+  margin:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 }
 
@@ -56,10 +73,10 @@ font-size:3.5rem;
 <p>These are games created by youth and staff at Neighborhood House. Enjoy!</p>
 <div class="row">
 <div class="column">
-<a href="https://neighbgames.github.io/eileenBubbles/"><img src="bubble.png" alt="screencap of Bubble Popper"></a><a href="https://neighbgames.github.io/eileenBubbles/">Bubble Popper</a>
+<a href="https://neighbgames.github.io/eileenBubbles/"><img src="bubble.png" width="100%" alt="screencap of Bubble Popper"></a><a href="https://neighbgames.github.io/eileenBubbles/">Bubble Popper</a>
 </div>
 <div class="column">
-<a href="https://neighbgames.github.io/eileenCookieCatch/"><img src="cookieCatch.png" alt="screencap of Cookie Catch"></a><a href="https://neighbgames.github.io/eileenCookieCatch/">Cookie Catch</a>
+<a href="https://neighbgames.github.io/eileenCookieCatch/"><img src="cookieCatch.png" width="100%" alt="screencap of Cookie Catch"></a><a href="https://neighbgames.github.io/eileenCookieCatch/">Cookie Catch</a>
 </div>
 </div>
 
